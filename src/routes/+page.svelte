@@ -2,6 +2,7 @@
 	import symbol from '$lib/assets/forme_1.svg';
 	import FirstSection from '$lib/components/homepage/FirstSection.svelte';
 	import SecondSection from '$lib/components/homepage/SecondSection.svelte';
+	import ThirdSection from '$lib/components/homepage/ThirdSection.svelte';
 	let scroll: number;
 	let innerHeight: number;
 
@@ -28,5 +29,6 @@
 	<div class="">
 		<FirstSection />
 		<SecondSection />
+		<ThirdSection />
 	</div>
 </div>
