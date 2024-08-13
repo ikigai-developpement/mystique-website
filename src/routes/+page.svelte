@@ -1,6 +1,7 @@
 <script lang="ts">
 	import symbol from '$lib/assets/forme_1.svg';
 	import FirstSection from '$lib/components/homepage/FirstSection.svelte';
+	import SecondSection from '$lib/components/homepage/SecondSection.svelte';
 	let scroll: number;
 	let innerHeight: number;
 
@@ -13,7 +14,7 @@
 
 <svelte:window bind:scrollY={scroll} bind:innerHeight />
 
-<div class="flex flex-col md:text-6xl text-white min-h-screen bg-headerimg items-center bg-cover">
+<div class="flex flex-col md:text-6xl text-white min-h-screen bg-headerimg items-center bg-contain">
 	<div class=" mt-20">
 		<img
 			src={symbol}
@@ -26,5 +27,6 @@
 	<div class="backdrop-blur-[1px] bg-[#111111]/10 fixed h-full inset-0"></div>
 	<div class="">
 		<FirstSection />
+		<SecondSection />
 	</div>
 </div>
