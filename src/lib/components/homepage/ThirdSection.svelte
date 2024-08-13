@@ -93,7 +93,7 @@
 	.inner-card {
 		transform-style: preserve-3d;
 		transition: transform 0.7s cubic-bezier(0.26, 0.6, 0.82, 0.53);
-		transition-delay: 0.16s;
+		transition-delay: 0.1s;
 	}
 	.relative:hover .inner-card {
 		transform: rotateY(180deg);

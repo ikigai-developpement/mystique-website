@@ -18,7 +18,7 @@
 		coord2.set({ x: e.pageX, y: e.pageY });
 	}}
 	on:mousedown={(e) => {
-		size.set(30);
+		size.set(20);
 	}}
 	on:mouseup={(e) => {
 		size.set(10);

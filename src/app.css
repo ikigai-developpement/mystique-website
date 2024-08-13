@@ -17,3 +17,9 @@ html {
         src: url("$lib/assets/Fonts/horizon.otf");
     }
 }
+
+@layer utilities {
+    .transition-transform {
+        transition: transform  ease-in-out;
+    }
+}
