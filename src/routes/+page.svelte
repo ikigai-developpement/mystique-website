@@ -15,8 +15,8 @@
 
 <svelte:window bind:scrollY={scroll} bind:innerHeight />
 
-<div class="flex flex-col md:text-6xl text-white min-h-screen bg-headerimg items-center bg-contain">
-	<div class=" mt-20">
+<div class="flex flex-col md:text-6xl text-white min-h-screen bg-headerimg items-center bg-cover">
+	<div class=" mt-20 fixed">
 		<img
 			src={symbol}
 			alt="symbole"
@@ -26,9 +26,10 @@
 		/>
 	</div>
 	<div class="backdrop-blur-[1px] bg-[#111111]/10 fixed h-full inset-0"></div>
-	<div class="">
-		<FirstSection />
-		<SecondSection />
-		<ThirdSection />
-	</div>
+</div>
+
+<div class="">
+	<FirstSection />
+	<SecondSection />
+	<ThirdSection />
 </div>

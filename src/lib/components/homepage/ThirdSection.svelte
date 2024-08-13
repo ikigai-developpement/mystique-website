@@ -25,7 +25,7 @@
 			actions, qui poursuivent l'utopie de changer le monde à leur manière.
 		</p>
 	</div>
-	<div class="flex flex-col md:flex-row justify-evenly mt-20 mx-auto">
+	<div class="flex flex-col md:flex-row justify-evenly mt-20 mx-48">
 		<div class="relative w-72 h-96 perspective-1000">
 			<div class="inner-card w-full h-full transition-transform duration-500 transform">
 				<div class="front absolute inset-0">
