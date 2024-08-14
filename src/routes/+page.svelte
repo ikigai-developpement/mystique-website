@@ -5,9 +5,8 @@
 	import SecondSection from '$lib/components/homepage/SecondSection.svelte';
 	import ThirdSection from '$lib/components/homepage/ThirdSection.svelte';
 
-	let scroll: number;
-	let innerHeight: number;
-	let visibleSection = 0;
+	export let scroll: number;
+	export let innerHeight: number;
 	let symbolIsVisible = 0;
 	let isShown = false;
 
@@ -29,15 +28,17 @@
 
 <svelte:window bind:scrollY={scroll} bind:innerHeight />
 
-<div class="flex flex-col md:text-6xl text-white min-h-screen bg-headerimg items-center bg-cover">
+<div
+	class="flex flex-col md:text-6xl text-white md:min-h-screen bg-headerimg items-center md:bg-cover"
+>
 	{#if isShown}
-		<div class="mt-20 fixed">
+		<div class="md:mt-20 mt-36 fixed">
 			<img
 				src={symbol}
 				alt="symbole"
 				width="800"
 				style:transform={`rotate(${scroll / 10}deg) scale(${Math.min(scroll / 800 + 0.4)})`}
-				style={`opacity: ${symbolIsVisible * calculate(scroll, 0.6 * innerHeight, 2.2 * innerHeight, 1, 0)};
+				style={`opacity: ${symbolIsVisible * calculate(scroll, 1.6 * innerHeight, 2.2 * innerHeight, 1, 0)};
 					transition: opacity 0.3s ease-in;`}
 			/>
 		</div>
