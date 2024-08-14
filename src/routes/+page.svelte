@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-
 	import symbol from '$lib/assets/forme_1.svg';
 	import FirstSection from '$lib/components/homepage/FirstSection.svelte';
 	import SecondSection from '$lib/components/homepage/SecondSection.svelte';
 	import ThirdSection from '$lib/components/homepage/ThirdSection.svelte';
+
 	let scroll: number;
 	let innerHeight: number;
+	let visibleSection = 0;
 	let symbolIsVisible = 0;
 	let isShown = false;
 
@@ -18,6 +19,7 @@
 			isShown = true;
 		}, 500);
 	});
+
 	function calculate(scroll: number, min: number, max: number, start: number, end: number): number {
 		if (scroll <= min) return start;
 		if (scroll >= max) return end;
@@ -44,7 +46,7 @@
 </div>
 
 <div class="">
-	<FirstSection />
-	<SecondSection />
+	<FirstSection {scroll} {innerHeight} />
+	<SecondSection {scroll} {innerHeight} />
 	<ThirdSection />
 </div>
