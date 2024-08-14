@@ -12,10 +12,10 @@
 		class={`fixed inset-0 flex  flex-col md:my-auto my-20 text-center backdrop-blur-[2px] md:mx-[20rem] mx-5 rounded-3xl h-[26rem]
 		bg-gradient-to-r from-transparent from-10% via-black/40 via-24% to-transparent to-90%   transition-opacity ease-in duration-150 ${displayClass} `}
 	>
-		<h1 class={`font-atteron md:text-2xl text-lg tracking-wider  my-5 transition-opacity  ease-in duration-150 ${displayClass}delay-300 `}>
-			l’agence de conseil en stratégie immersive dévoilé à Lévis, Québec et Montréal
+		<h1 class={`font-atteron md:text-2xl text-lg tracking-wider  my-5 transition-opacity  ease-in duration-150 ${displayClass} delay-300 `}>
+			l’agence de conseil en stratégie immersive dévoilé à Lévis <span class="font-horizon">,</span> Québec et Montréal
 		</h1>
-		<h2 class={`uppercase font-horizon tracking-wider my-5 md:text-5xl text-xl transition-opacity delay-700  ease-in duration-700 ${displayClass} delay-150`}>
+		<h2 class={`uppercase font-horizon tracking-wider my-5 md:text-5xl text-xl transition-opacity delay-700  ease-in duration-500 ${displayClass} delay-150`}>
 			Révéler la passion humaine derrière chaque entreprise
 		</h2>
 		<p class={`md:text-lg  my-5 transition-opacity delay-500 tracking-wide ease-in duration-150 ${displayClass}` }>
