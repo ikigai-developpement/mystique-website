@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^5.4.3"
+		"@sveltejs/adapter-vercel": "^5.4.3",
+		"svelte-inview": "^4.0.2"
 	}
 }
